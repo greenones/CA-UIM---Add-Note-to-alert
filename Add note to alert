@@ -1,0 +1,7 @@
+a = alarm.get()
+note = pds.create()
+pds.putString(note,"nimid",a.nimid)
+pds.putString(note,"description","Test")
+pds.putString(note,"body","Test")
+pds.putString(note,"catagorie","Test")
+nimbus.request("nas","note_attach",note)
